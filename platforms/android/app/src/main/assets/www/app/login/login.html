@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-5 mx-auto" id="first">
+            <div class="login-container">
+                <div class="myform form ">
+                    <div class="logo mb-3 logo-one">
+                        <div class="col-md-12 text-center">
+                            <h1>Login</h1>
+                        </div>
+                    </div>
+                    <form ng-controller="loginController" ng-submit="login(user)" class="login-form">
+                        <div class="form-group">
+                            <label class="input-label">Email address</label>
+                            <input type="email" class="form-control" ng-class="{'is-valid': !user.email.$error.required, 'is-invalid': user.email.$error.required}" 
+                                id="email" placeholder="Enter email" ng-required="true" ng-model="user.email">
+                        </div>
+                        <small class="invalid-feedback user-id" ng-show="user.email.$error.required">
+                            Email address is required
+                        </small>
+                        <div class="form-group">
+                            <label class="input-label">Password</label>
+                            <input type="password" class="form-control" ng-class="{'is-valid': !user.password.$error.required, 'is-invalid': user.password.$error.required}"
+                                id="password"  placeholder="Enter Password" ng-required="true" ng-model="user.password">
+                        </div>
+                        <small class="invalid-feedback user-id" ng-show="user.password.$error.required">
+                            Password is required
+                        </small>
+                        <div class="col-md-12 text-center login-btn">
+                            <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

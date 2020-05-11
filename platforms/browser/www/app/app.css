@@ -1,0 +1,140 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+a {
+  text-decoration:none !important;
+}
+
+h1,h2,h3{
+  font-family: 'Kaushan Script', cursive;
+}
+
+.myform {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 1.1rem;
+  outline: 0;
+  max-width: 500px;
+  height: 100%;
+}
+
+.tx-tfm{
+  text-transform:uppercase;
+}
+.mybtn{
+  border-radius:50px;
+}
+  
+.login-or {
+  position: relative;
+  color: #aaa;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.span-or {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: -2px;
+  margin-left: -25px;
+  background-color: #fff;
+  width: 50px;
+  text-align: center;
+}
+.hr-or {
+  height: 1px;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+.google {
+  height:40px;
+  text-align:center;
+  outline:none;
+}
+
+form .error {
+  color: #ff0000;
+}
+
+#second{display:none;}
+
+#first {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  width: 330px;
+  height: 370px;
+}
+
+label.input-label {
+  margin-top: 4px;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.login-container {
+  height: 100%;
+}
+
+.login-btn {
+  margin: 30px 0px 10px 0px;
+}
+
+.custom-nav {
+  margin-bottom: 0px;
+}
+
+.logo-one {
+  margin-bottom: 15px;
+}
+
+.login-form {
+  margin-top: 15px;
+}
+
+.option-nav {
+  margin: 0px;
+  display: inline-block;
+  vertical-align: middle;
+  float: right;
+}
+
+
